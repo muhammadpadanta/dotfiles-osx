@@ -3,8 +3,6 @@
 
 # Taps
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 
 # Shell and Core Utils
 brew "bash"                  # Latest version of Bash shell
@@ -68,7 +66,7 @@ brew "unzip"             # Extraction utility
 # Applications
 cask "iterm2"            # Terminal emulator
 cask "visual-studio-code"          # Code editor (Stable)
-cask "visual-studio-code-insiders" # Code editor (Insiders)
+cask "visual-studio-code@insiders" # Code editor (Insiders)
 cask "obsidian"          # Note taking
 cask "discord"           # Communication
 cask "zoom"              # Video conferencing
