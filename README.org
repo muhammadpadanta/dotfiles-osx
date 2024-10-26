@@ -1,51 +1,148 @@
-#+TITLE: =/home/muhammadpadanta/dotfiles=
+#+TITLE: =/Users/muhammadpadanta/dotfiles=
+#+AUTHOR: Muhammad Padanta
+#+DESCRIPTION: Personal dotfiles for macOS development environment
 
 * Introduction
-  This repository contains my personal dotfiles, which I use to configure my development environment on Linux Mint. I manage these dotfiles using =GNU Stow=, a symlink manager that makes it easy to keep configurations organized and portable.
+My personal dotfiles for macOS, managed with =GNU Stow= for easy symlinking and organization. This setup provides a clean, modular approach to managing various development tool configurations.
 
-* Getting Started
-  To set up these dotfiles on your machine, you'll need:
-  - Linux Mint (or any Unix-like system)
-  - =GNU Stow= installed
+* Prerequisites
+Before setting up these dotfiles, ensure you have:
+- macOS
+- Homebrew installed
+- Git
+- =GNU Stow=
+
+Install basic requirements:
+#+BEGIN_SRC bash
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install GNU Stow
+brew install stow
+#+END_SRC
 
 * Installation
-  Clone this repository to your home directory:
-  #+BEGIN_SRC bash
-  git clone https://github.com/muhammadpadanta/dotfiles.git ~/dotfiles
-  #+END_SRC
+Clone and set up the dotfiles:
+#+BEGIN_SRC bash
+# Clone the repository
+git clone https://github.com/muhammadpadanta/dotfiles.git ~/dotfiles
 
-  Then, navigate into the dotfiles directory and use =stow= to symlink the configurations:
-  #+BEGIN_SRC bash
-  cd ~/dotfiles
-  stow <package>
-  #+END_SRC
-  Replace =<package>= with the name of the config folder you want to stow (e.g., =nvim=, =fish=, etc.).
+# Navigate to dotfiles directory
+cd ~/dotfiles
+
+# Install Homebrew packages
+brew bundle
+
+# Create symlinks using stow
+stow */  # Install all configs
+# Or install individually:
+# stow nvim
+# stow fish
+# etc.
+#+END_SRC
 
 * Directory Structure
-  Each directory in this repository represents a set of related configuration files. For example:
-  - =nvim/=: Configuration files for Neovim
-  - =fish/=: Fish shell settings
-  - =starship/=: Starship prompt configuration
+#+BEGIN_SRC
+~/dotfiles/
+├── brew/            # Homebrew packages and casks
+│   └── Brewfile
+├── fish/           # Fish shell configuration
+│   └── .config/fish/
+├── git/            # Git configuration
+│   └── .gitconfig
+├── nvim/           # Neovim configuration
+│   └── .config/nvim/
+├── starship/       # Starship prompt configuration
+│   └── .config/starship.toml
+├── tmux/           # Tmux configuration
+│   └── .tmux.conf
+└── vscode/         # VS Code settings
+    └── .vscode/
+#+END_SRC
 
-* Example Usage
-  To set up all configurations at once, simply run:
-  #+BEGIN_SRC bash
-  stow *
-  #+END_SRC
+* Configuration Details
 
-  Or, if you only want specific configurations:
-  #+BEGIN_SRC bash
-  stow nvim
-  stow fish
-  #+END_SRC
+** Terminal Setup
+- Terminal: iTerm2
+- Shell: Fish Shell
+- Prompt: Starship
+- Multiplexer: Tmux
+- Font: JetBrainsMono Nerd Font
 
-* Notes
-  - If you encounter conflicts, you might already have config files in place. Consider backing them up before running =stow=.
-  - The symlinks created by Stow are placed relative to your home directory. If something looks off, check the symlink paths.
+** Development Tools
+- Editor: Neovim & VS Code
+- Git Configuration: Custom aliases and settings
+- Package Manager: Homebrew
+
+** Key Features
+- Modern CLI tools (exa, bat, fd, ripgrep)
+- Git-centric workflow
+- Consistent development environment
+- Easy installation and management
+
+* Usage Tips
+
+** Stow Management
+#+BEGIN_SRC bash
+# Add new configs
+stow <package>
+
+# Remove configs
+stow -D <package>
+
+# Restow (remove and add again)
+stow -R <package>
+#+END_SRC
+
+** Updating
+#+BEGIN_SRC bash
+# Update repository
+git pull
+
+# Update Homebrew packages
+brew bundle
+
+# Restow all configurations
+stow -R */
+#+END_SRC
 
 * Customization
-  Feel free to fork and adjust these dotfiles to match your preferences. They’re meant to be a starting point that you can build upon.
+These dotfiles are personalized for my workflow but are designed to be easily customizable:
+
+1. Fork the repository
+2. Modify configurations as needed
+3. Update the Brewfile for different packages
+4. Adjust VS Code settings and extensions
+
+* Troubleshooting
+
+** Common Issues
+- Existing config files: Back up and remove existing configurations before stowing
+- Stow errors: Check for conflicting files in target locations
+- Permission issues: Ensure proper file permissions
+
+** Solutions
+#+BEGIN_SRC bash
+# Backup existing configs
+mv ~/.config/nvim ~/.config/nvim.backup
+
+# Check stow debug output
+stow -v <package>
+
+# Restore file permissions
+chmod -R u+w ~/dotfiles
+#+END_SRC
+
+* Maintenance
+Regular maintenance tasks:
+- Update Brewfile when adding/removing packages
+- Keep VS Code extensions list updated
+- Commit changes regularly
+- Test on fresh installations periodically
 
 * License
-  MIT License – see the LICENSE file for details.
+MIT License – See LICENSE file for details.
 
+* Credits
+Thanks to the open source community and various dotfile repositories that inspired this configuration.
+#+END_SRC
