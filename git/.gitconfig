@@ -1,0 +1,40 @@
+[user]
+	email = dantagaul22@gmail.com
+	name = muhammadpadanta
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = false    # Using merge instead of rebase for safety
+
+[push]
+    default = simple  # Only push current branch
+
+[color]
+    ui = auto
+
+[alias]
+    # Basic, helpful shortcuts
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+
+    # Useful safe commands
+    unstage = reset HEAD --     # Remove files from staging
+    last = log -1 HEAD         # Show last commit
+    logs = log --oneline --decorate  # Compact log view
+
+    # Safe undo commands
+    undo = reset --soft HEAD^  # Undo last commit but keep changes
+
+[credential]
+    helper = osxkeychain      # Safely store credentials on macOS
+
+[merge]
+    conflictstyle = diff3     # Clearer conflict resolution
+    ff = only                 # Prevent accidental merges

@@ -1,0 +1,145 @@
+# Homebrew Bundle Configuration
+# Optimized for Apple Silicon Macs
+
+# Taps
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+
+# Shell and Core Utils
+brew "bash"                  # Latest version of Bash shell
+brew "fish"                  # User-friendly shell
+brew "coreutils"            # GNU core utilities
+brew "grep"                 # GNU grep
+brew "gnu-sed"             # GNU sed
+brew "make"                # GNU make
+brew "gawk"                # GNU awk
+brew "bc"                  # Calculator
+
+# Development Tools
+brew "git"                 # Version control
+brew "gh"                  # GitHub CLI
+brew "glab"                # GitLab CLI
+brew "lazygit"            # Terminal UI for git
+brew "mise"               # Development tool version manager
+brew "node"               # Node.js
+brew "nvm"                # Node Version Manager
+brew "yarn"               # Package manager
+brew "pkg-config"         # Package compile tool
+brew "autoconf"           # Automatic configure script builder
+brew "automake"           # Tool for generating GNU Standards-compliant Makefiles
+brew "cocoapods"          # iOS dependency manager
+
+# Modern CLI Tools
+brew "bat"                # Cat clone with syntax highlighting
+brew "eza"                # Modern replacement for ls
+brew "fd"                 # Simple, fast alternative to find
+brew "fzf"                # Fuzzy finder
+brew "ripgrep"            # Fast search tool
+brew "jq"                 # JSON processor
+brew "neofetch"          # System information tool
+brew "starship"          # Cross-shell prompt
+brew "zoxide"            # Smarter cd command
+brew "stow"              # Symlink farm manager
+brew "tldr"              # Simplified man pages
+
+# Text Editors and Tools
+brew "neovim"             # Modern vim
+brew "tree-sitter"        # Parser generator tool
+
+# Network Tools
+brew "curl"               # Transfer data tool
+brew "wget"               # Internet file retriever
+brew "aria2"             # Download utility
+
+# Media Tools
+brew "ffmpeg"            # Media processor
+brew "yt-dlp"            # YouTube downloader
+brew "nowplaying-cli"    # Show current playing music
+
+# Libraries
+brew "libevent"          # Event notification library
+brew "ncurses"           # Terminal UI library
+brew "utf8proc"          # Unicode processing library
+
+# System Utilities
+brew "unzip"             # Extraction utility
+
+# Applications
+cask "iterm2"            # Terminal emulator
+cask "visual-studio-code"          # Code editor (Stable)
+cask "visual-studio-code-insiders" # Code editor (Insiders)
+cask "obsidian"          # Note taking
+cask "discord"           # Communication
+cask "zoom"              # Video conferencing
+cask "figma"             # Design tool
+cask "steam"             # Gaming platform
+cask "iina"              # Media player
+cask "obs"               # Streaming software
+
+# System Enhancement
+cask "rectangle"         # Window manager
+cask "linearmouse"       # Mouse utility
+cask "hiddenbar"         # Menu bar manager
+cask "blackhole-16ch"    # Audio driver
+
+# Fonts
+cask "font-monaspace-nerd-font"     # Development font
+cask "font-noto-sans-symbols-2"     # Symbol font
+
+# VS Code Extensions [57 total]
+vscode "aaron-bond.better-comments"             # Better code comments
+vscode "adpyke.codesnap"                       # Code screenshot tool
+vscode "alexisvt.flutter-snippets"             # Flutter snippets
+vscode "anseki.vscode-color"                   # Color picker
+vscode "be5invis.vscode-custom-css"            # Custom CSS
+vscode "bradlc.vscode-tailwindcss"             # Tailwind CSS support
+vscode "catppuccin.catppuccin-vsc"            # Catppuccin theme
+vscode "chadalen.vscode-jetbrains-icon-theme"  # JetBrains icons
+vscode "chakrounanas.turbo-console-log"        # Console log generator
+vscode "christian-kohler.npm-intellisense"     # NPM intellisense
+vscode "christian-kohler.path-intellisense"    # Path intellisense
+vscode "chrmarti.regex"                        # Regex tools
+vscode "dart-code.dart-code"                   # Dart language
+vscode "dart-code.flutter"                     # Flutter framework
+vscode "dbaeumer.vscode-eslint"                # JavaScript linter
+vscode "donjayamanne.githistory"               # Git history
+vscode "eamodio.gitlens"                       # Git lens
+vscode "ecmel.vscode-html-css"                 # HTML/CSS support
+vscode "enkia.tokyo-night"                     # Tokyo Night theme
+vscode "esbenp.prettier-vscode"                # Prettier formatter
+vscode "formulahendry.auto-close-tag"          # Auto close HTML tags
+vscode "formulahendry.auto-complete-tag"       # Auto complete HTML tags
+vscode "formulahendry.auto-rename-tag"         # Auto rename HTML tags
+vscode "formulahendry.code-runner"             # Code runner
+vscode "github.copilot"                        # GitHub Copilot
+vscode "github.copilot-chat"                   # Copilot chat
+vscode "github.github-vscode-theme"            # GitHub theme
+vscode "golang.go"                             # Go language
+vscode "hzgood.dart-data-class-generator"      # Dart class generator
+vscode "inferrinizzard.prettier-sql-vscode"    # SQL formatter
+vscode "jeroen-meijer.pubspec-assist"          # Pubspec helper
+vscode "marcelovelasquez.flutter-tree"         # Flutter tree
+vscode "mhutchie.git-graph"                    # Git graph
+vscode "miguelsolorio.fluent-icons"            # Fluent icons
+vscode "monish.regexsnippets"                  # Regex snippets
+vscode "ms-python.debugpy"                     # Python debugger
+vscode "ms-python.python"                      # Python support
+vscode "ms-python.vscode-pylance"              # Python language server
+vscode "njqdev.vscode-python-typehint"         # Python type hints
+vscode "pflannery.vscode-versionlens"          # Version lens
+vscode "pkief.material-icon-theme"             # Material icons
+vscode "postman.postman-for-vscode"            # Postman
+vscode "pranaygp.vscode-css-peek"              # CSS peek
+vscode "rvest.vs-code-prettier-eslint"         # Prettier ESLint
+vscode "shd101wyy.markdown-preview-enhanced"    # Markdown preview
+vscode "sporiley.css-auto-prefix"              # CSS autoprefixer
+vscode "steoates.autoimport"                   # Auto import
+vscode "tomoki1207.pdf"                        # PDF viewer
+vscode "tonybaloney.vscode-pets"               # VS Code pets
+vscode "usernamehw.errorlens"                  # Error lens
+vscode "vscjava.vscode-gradle"                 # Gradle support
+vscode "vspacecode.whichkey"                   # Which key
+vscode "wix.vscode-import-cost"                # Import cost
+vscode "yandeu.five-server"                    # Live server
+vscode "zignd.html-css-class-completion"       # HTML/CSS class completion

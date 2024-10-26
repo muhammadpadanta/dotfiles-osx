@@ -1,0 +1,94 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor/IDE specific files
+.idea/
+*.swp
+*.swo
+*~
+
+# Fish shell specific
+fish_variables
+.config/fish/conf.d/local.fish
+.config/fish/functions/local/
+
+# Neovim
+.netrwhist
+*.log
+.config/nvim/.git/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+env/
+.env
+venv/
+.venv/
+
+# Ruby
+.bundle/
+vendor/
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sqlite
+*.sqlite3
+
+# Private/sensitive files
+.ssh/id_*
+.ssh/known_hosts
+.gnupg
+.env*
+.aws/
+.config/gcloud/
+
+# Local configuration files
+local.*
+*.local
+**/local/
+**/private/
+
+# Brew
+Brewfile.lock.json
+
+# VS Code Insiders
+.vscode-insiders/
+
+# Tmux
+tmux/plugins/*
+!tmux/plugins/tpm
+
+# Starship
+starship.toml.local
+
+# Cache directories
+.cache/
