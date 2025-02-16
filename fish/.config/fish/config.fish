@@ -3,6 +3,7 @@
 # ░▀░░░▀░▀░░▀░░▀░▀
 
 # General path
+fish_config theme choose "Dracula Official"
 set -x PATH /opt/homebrew/bin $PATH
 set -x MANPATH /opt/homebrew/share/man $MANPATH
 set -x INFOPATH /opt/homebrew/share/info $INFOPATH
@@ -10,6 +11,8 @@ set -x PATH $HOME/development/flutter/bin $PATH
 set -x JAVA_HOME /Users/muhammadpadanta/.local/share/mise/installs/java/21.0.2
 set -x PATH $JAVA_HOME/bin $PATH
 set -x PATH $HOME/.pub-cache/bin $PATH
+set -x PATH $PATH /Users/muhammadpadanta/Library/Android/sdk/platform-tools
+
 
 
 # ░█▀█░█░░░▀█▀░█▀█░█▀▀░█▀▀░█▀▀
@@ -41,7 +44,9 @@ alias smux 'tmux source ~/.tmux.conf'
 alias cnv 'nvim ~/.config/nvim/'
 alias cstar 'nvim ~/.config/starship.toml'
 alias cneo 'nvim ~/.config/neofetch/config.conf'
-alias cl 'clear'
+alias cyab 'nvim ~/.config/yabai/yabairc'
+alias cskhd 'nvim ~/.config/skhd/skhdrc'
+alias cl 'clear && clear'
 
 #tmux alias
 alias tns 'tmux new -s'
@@ -51,6 +56,7 @@ alias tach 'tmux attach'
 #git alias
 alias gc 'git checkout'
 alias glb 'git branch -a'
+alias gcl 'git clone'
 
 #AVD alias
 alias listavd '$ANDROID_HOME/tools/emulator -list-avds'
@@ -74,6 +80,8 @@ alias la='eza -a -F --icons'
 alias lt='eza -T --icons'
 alias lta='eza -T -a -L4 --ignore-glob=.git --icons'
 
+alias brewupdate='brew update && brew upgrade && brew cleanup'
+
 
 # ░█▀▀░█▀█░█▀█░█▀▀░▀█▀░█▀▀
 # ░█░░░█░█░█░█░█▀▀░░█░░█░█
@@ -83,13 +91,8 @@ alias lta='eza -T -a -L4 --ignore-glob=.git --icons'
 set -U fish_history_limit 5000
 
 # FZF config
-set -Ux FZF_DEFAULT_OPTS \
-  "--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
-   --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
-   --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
-   --color 'border:#ffffff,info:#ffff00' \
-   --preview 'seq 1000' \
-   --height 70% --border --layout reverse"
+set -Ux FZF_DEFAULT_OPTS "--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
+
 
 fzf_configure_bindings --directory=\cf
 
@@ -129,7 +132,6 @@ set -U fish_greeting
 
 starship init fish | source
 zoxide init fish | source
-~/.local/bin/mise activate fish | source
 
 
 

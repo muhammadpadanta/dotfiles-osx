@@ -1,0 +1,74 @@
+#!/bin/bash
+
+# Load dependencies
+source "$CONFIG_DIR/colors.sh"
+
+
+ITEM_DIR="$CONFIG_DIR/items"
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+
+FONT="JetBrainsMono Nerd Font"
+PADDINGS=3
+
+
+
+# Bar appearance
+bar=(
+  height=30
+  notch_display_height=42
+  notch_offset=-7
+  color=00xff0a0a0a
+  shadow=on
+  position=top
+  sticky=on
+  padding_left=2
+  padding_right=2
+  margin=10
+  corner_radius=8
+  topmost=window
+  blur_radius=0
+  y_offset=7
+)
+
+sketchybar --bar "${bar[@]}"
+
+# Default item properties
+defaults=(
+  updates=when_shown
+  icon.drawing=on
+  icon.padding_left=0
+  icon.padding_right=0
+  icon.font="$FONT:Bold:12"
+  label.font="$FONT:Bold:12"
+  label.color=$LABEL_COLOR
+  label.padding_left=8
+  label.padding_right=8
+  padding_left=2
+  padding_right=5
+  background.height=26
+  background.corner_radius=8
+  background.border_width=2
+  background.shadow.distance=3
+  background.shadow.color=0x800a0a0a
+  popup.background.border_width=2
+  popup.background.corner_radius=9
+  popup.background.color=$POPUP_BACKGROUND_COLOR
+  popup.blur_radius=20
+  popup.background.shadow.drawing=on
+  scroll_texts=on
+)
+
+sketchybar --default "${defaults[@]}"
+
+# Load items
+for item in spaces front_app time calendar wifi volume battery; do
+  source "$ITEM_DIR/$item.sh"
+done
+
+# Enable hotload
+sketchybar --hotload on
+
+# Run all item scripts
+sketchybar --update
+
+echo "SketchyBar configuration loaded."
