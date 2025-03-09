@@ -5,6 +5,11 @@
 * Introduction
 My personal dotfiles for macOS, managed with =GNU Stow= for easy symlinking and organization. This setup provides a clean, modular approach to managing various development tool configurations.
 
+#+CAPTION: Visual representation result
+[[assets/Home.png]] [[assets/Term.png]] [[assets/Others.png]]
+
+
+
 * Prerequisites
 Before setting up these dotfiles, ensure you have:
 - macOS
