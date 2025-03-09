@@ -14,7 +14,7 @@
   /** ------------ Editor Settings ------------ **/
   "editor.hover.delay": 900,
   "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.fontSize": 13,
+  "editor.fontSize": 13.5,
   "editor.fontWeight": 450,
   "editor.lineHeight": 26,
   "editor.lineNumbers": "on",
@@ -179,9 +179,11 @@
     "ui.semanticTokens": true
   },
 
-  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
+  "vscode_vibrancy.type": "auto",
+
+  "workbench.settings.applyToAllProfiles": [],
   "git.openRepositoryInParentFolders": "never",
-  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
   "editor.accessibilitySupport": "off",
   "extensions.trustedPublishers": [
     "aaron-bond",
@@ -231,5 +233,7 @@
     "yandeu",
     "zignd"
   ],
-  "python.defaultInterpreterPath": "/Users/muhammadpadanta/.local/share/mise/installs/python/3.11.11/bin/python"
+  "python.defaultInterpreterPath": "/Users/muhammadpadanta/.local/share/mise/installs/python/3.11.11/bin/python",
+  "workbench.activityBar.location": "hidden",
+  "terminal.integrated.gpuAcceleration": "off"
 }

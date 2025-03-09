@@ -3,7 +3,7 @@
 # ░▀░░░▀░▀░░▀░░▀░▀
 
 # General path
-fish_config theme choose "Dracula Official"
+# fish_config theme choose "Dracula Official"
 set -x PATH /opt/homebrew/bin $PATH
 set -x MANPATH /opt/homebrew/share/man $MANPATH
 set -x INFOPATH /opt/homebrew/share/info $INFOPATH

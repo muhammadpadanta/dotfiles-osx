@@ -2,24 +2,24 @@
 
 format = """
 [╭](#ffffff)\
-[](surface0)\
+[](color_bg1)\
 $os\
 $username\
-[](bg:peach fg:surface0)\
+[](bg:color_orange fg:color_bg1)\
 $directory\
-[](fg:peach bg:green)\
+[](fg:color_orange bg:color_green)\
 $git_branch\
 $git_status\
-[](fg:green bg:teal)\
+[](fg:color_green bg:color_aqua)\
 $c\
 $nodejs\
 $python\
-[](fg:teal bg:red)\
+[](fg:color_aqua bg:color_red)\
 $cmd_duration\
-[ ](fg:red)\
+[ ](fg:color_red)\
 $line_break$character"""
 
-palette = 'catppuccin_mocha'
+palette = 'gruvbox_dark'
 
 [palettes.gruvbox_dark]
 color_fg0 = '#fbf1c7'
@@ -33,37 +33,9 @@ color_purple = '#b16286'
 color_red = '#cc241d'
 color_yellow = '#d79921'
 
-[palettes.catppuccin_mocha]
-rosewater = "#f5e0dc"
-flamingo = "#f2cdcd"
-pink = "#f5c2e7"
-orange = "#cba6f7"
-red = "#f38ba8"
-maroon = "#eba0ac"
-peach = "#fab387"
-yellow = "#f9e2af"
-green = "#a6e3a1"
-teal = "#94e2d5"
-sky = "#89dceb"
-sapphire = "#74c7ec"
-blue = "#89b4fa"
-lavender = "#b4befe"
-text = "#cdd6f4"
-subtext1 = "#bac2de"
-subtext0 = "#a6adc8"
-overlay2 = "#9399b2"
-overlay1 = "#7f849c"
-overlay0 = "#6c7086"
-surface2 = "#585b70"
-surface1 = "#45475a"
-surface0 = "#313244"
-base = "#1e1e2e"
-mantle = "#181825"
-crust = "#11111b"
-
 [os]
 disabled = false
-style = "bg:surface0 fg:text"
+style = "bg:color_bg1 fg:color_fg0"
 
 [os.symbols]
 Windows = "󰍲"
@@ -73,45 +45,46 @@ Arch = "󰣇"
 
 [username]
 show_always = true
-style_user = "bg:surface0 fg:text"
-style_root = "bg:surface0 fg:text"
+style_user = "bg:color_bg1 fg:color_fg0"
+style_root = "bg:color_bg1 fg:color_fg0"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:mantle bg:peach"
+style = "fg:color_bg1 bg:color_orange"
 format = "[ $path ]($style)"
 truncation_length = 1
 truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:teal"
-format = '[[ $symbol $branch ](fg:base bg:green)]($style)'
+style = "bg:color_aqua"
+format = '[[ $symbol $branch ](fg:color_bg1 bg:color_green)]($style)'
 
 [git_status]
-style = "bg:teal"
-format = '[[($all_status$ahead_behind )](fg:base bg:green)]($style)'
+style = "bg:color_aqua"
+format = '[[($all_status$ahead_behind )](fg:color_bg1 bg:color_green)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+style = "bg:color_aqua"
+format = '[[ $symbol( $version) ](fg:color_bg1 bg:color_aqua)]($style)'
 
 [c]
 symbol = " "
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+style = "bg:color_aqua"
+format = '[[ $symbol( $version) ](fg:color_bg1 bg:color_aqua)]($style)'
 
 [python]
 symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+style = "bg:color_aqua"
+format = '[[ $symbol( $version) ](fg:color_bg1 bg:color_aqua)]($style)'
 
 [cmd_duration]
 min_time = 5
-style = "bg:peach"
-format = '[[ 󱎫 $duration ](fg:mantle bg:red)]($style)'
+style = "bg:color_orange"
+format = '[[ 󱎫 $duration ](fg:color_bg1 bg:color_red)]($style)'
 
 [character]
 success_symbol = "[╰─❯](#ffffff)"
-error_symbol = "[╰─×](#ff0000)"
+error_symbol = "[╰─×](#cc241d)"
+

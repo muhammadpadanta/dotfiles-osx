@@ -13,7 +13,6 @@ for sid in {1..9}; do
 done
 
 
-
 # Space Separator
 sketchybar --add item space_separator left\
            --set space_separator icon="➤"\

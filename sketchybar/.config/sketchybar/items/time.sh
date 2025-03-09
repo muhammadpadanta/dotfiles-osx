@@ -5,13 +5,12 @@ source "$CONFIG_DIR/colors.sh"
 time_item=(
   # Label settings
   label.color="$FOREGROUND"
-   label.shadow.drawing=on
-  label.shadow.distance=2
+  label.shadow.drawing=on
   label.padding_right=8
 
   # Background settings
-  background.color="$SELECTION"
-  background.shadow.drawing=on\
+  background.color="$BACKGROUND_2"
+  background.shadow.drawing=off\
 
 
   # Functionality

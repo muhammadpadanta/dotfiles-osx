@@ -54,6 +54,7 @@ get_icon_for_app() {
     "Figma") echo " " ;;
     "Resolve") echo "󰌁 " ;;
     "osu!") echo "󰊴 " ;;
+    "Insomnia") echo " ";;
     "Ragnarok M: Classic") echo "󰊴 " ;;
 
     *) echo " " ;;  # Default icon

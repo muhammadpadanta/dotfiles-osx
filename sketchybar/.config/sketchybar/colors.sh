@@ -1,25 +1,28 @@
 #!/bin/bash
 
-### Dracula colors
-export RED=0xffff5555
-export ORANGE=0xffffb86c
-export GREEN=0xff50fa7b
-export YELLOW=0xfff1fa8c
-export PINK=0xffff79c6
-export CYAN=0xff8be9fd
-export PURPLE=0xffbd93f9
+### Gruvbox-Dark colors
+export RED=0xffcc241d
+export ORANGE=0xffd79921
+export GREEN=0xff98971a
+export YELLOW=0xfffabd2f
+export PUPRLE=0xffb16286
+export BLUE=0xff458588
+export AQUA=0xff689d6a
+export GRAY=0xffa89984
 
-export BACKGROUND=0xff282a36
-export FOREGROUND=0xfff8f8f2
-export SELECTION=0xff44475a
-export COMMENT=0xff6272a4
+export BACKGROUND=0xff282828
+export BACKGROUND_2=0xff3c3836
+export BACKGROUND_TRANSPARENT=0x90282828
+export FOREGROUND=0xffebdbb2
 
-export RED_BG=0x60ff5555
-export ORANGE_BG=0x90ffb86c
-export GREEN_BG=0x90b8bb26
-export YELLOW_BG=0x70f1fa8c
-export PINK_BG=0x20ff79c6
-export CYAN_BG=0x808be9fd
-export PURPLE_BG=0x30bd93f9
+export RED_BG=0x30cc241d
+export ORANGE_BG=0x30d79921
+export GREEN_BG=0x3098971a
+export YELLOW_BG=0x30fabd2f
+export PURPLE_BG=0x30b16286
+export BLUE_BG=0x50458588
+export AQUA_BG=0x50689d6a
+export GRAY=0xffa89984
+
 
 

@@ -6,11 +6,10 @@ calendar=(
   # label
   label.color="$FOREGROUND"
   label.shadow.drawing=on
-  label.shadow.distance=2
-  background.shadow.drawing=on\
+  background.shadow.drawing=off\
 
 
-  background.color="$SELECTION"
+  background.color="$BACKGROUND_2"
 
   # functionality
   update_freq=30

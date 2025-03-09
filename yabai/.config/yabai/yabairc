@@ -5,7 +5,7 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 # padding set to 12px
-yabai -m config top_padding 45
+yabai -m config top_padding 50
 yabai -m config bottom_padding 10
 yabai -m config left_padding 10
 yabai -m config right_padding 10
@@ -39,7 +39,8 @@ yabai -m rule --add app="Discord" manage=off
 yabai -m rule --add app="DaVinci Resolve" manage=off
 yabai -m rule --add app="Minecraft Launcher" manage=off
 yabai -m rule --add app="Ragnarok M: Classic" manage=off
+yabai -m rule --add app="VNC Viewer" manage=off
 
 
 # Borders
-borders active_color=0xfff8f8f2 inactive_color=0x00000000 width=8.0 hidpi=on &
+borders active_color=0xffd79921 inactive_color=0x00000000 width=6.0 hidpi=off &

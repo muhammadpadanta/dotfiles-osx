@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
 front_app=(
+  y_offset=-1
   icon.background.drawing=on
-  icon.drawing=on
-  label.color="$YELLOW"
+  icon.background.image.scale=0.7
+  label.color="$FOREGROUND"
   label.drawing=on
+  label.font.size=13
   display=active
   script="$PLUGIN_DIR/front_app.sh"
   click_script="open -a 'Mission Control'"

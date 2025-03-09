@@ -21,22 +21,22 @@ fi
 if [ "$PERCENTAGE" -ge 90 ]; then
   ICON=""  # Full battery
   COLOR=$GREEN
-  BACKGROUND=$SELECTION
+  BACKGROUND=$GREEN_BG
 
 elif [ "$PERCENTAGE" -ge 60 ]; then
   ICON=""  # 60-89%
   COLOR=$GREEN
-  BACKGROUND=$SELECTION
+  BACKGROUND=$GREEN_BG
 
 elif [ "$PERCENTAGE" -ge 30 ]; then
   ICON=""  # 30-59%
   COLOR=$YELLOW
-  BACKGROUND=$SELECTION
+  BACKGROUND=$YELLOW_BG
 
 elif [ "$PERCENTAGE" -ge 10 ]; then
   ICON=""  # 10-29%
   COLOR=$RED
-  BACKGROUND=$SELECTION
+  BACKGROUND=$RED_BG
 
 else
   ICON=""  # Critical
@@ -56,7 +56,6 @@ if [ -z "$NAME" ]; then
 fi
 
 # Update SketchyBar (icon & label color)
-sketchybar --set "$NAME"  label="$ICON  $PERCENTAGE% " "icon.color=$COLOR" "label.color=$COLOR" "background.color=$BACKGROUND"    background.shadow.drawing=on\
+sketchybar --set "$NAME"  label="$ICON  $PERCENTAGE% " "icon.color=$COLOR" "label.color=$COLOR" "background.color=$BACKGROUND"    background.shadow.drawing=off\
   label.shadow.drawing=on\
-  label.shadow.distance=2\
 

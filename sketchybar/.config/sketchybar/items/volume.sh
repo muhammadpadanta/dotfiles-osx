@@ -4,11 +4,10 @@ source "$CONFIG_DIR/colors.sh"
 
 volume=(
   # label
-  label.color=$CYAN
-  background.color="$SELECTION"
-  background.shadow.drawing=on\
+  label.color=$AQUA
+  background.color="$AQUA_BG"
+  background.shadow.drawing=off\
   label.shadow.drawing=on
-  label.shadow.distance=2
 
 
   # functionality

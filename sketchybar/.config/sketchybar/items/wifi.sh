@@ -6,11 +6,10 @@ wifi=(
   # label
   label.color=$ORANGE
   label.shadow.drawing=on
-  label.shadow.distance=2
 
 
-  background.color="$SELECTION"
-  background.shadow.drawing=on\
+  background.color="$ORANGE_BG"
+  background.shadow.drawing=off\
 
 
   # functionality
