@@ -56,6 +56,7 @@ get_icon_for_app() {
     "osu!") echo "󰊴 " ;;
     "Insomnia") echo " ";;
     "Ragnarok M: Classic") echo "󰊴 " ;;
+    "Ghostty") echo "󰊠 ";;
 
     *) echo " " ;;  # Default icon
   esac
