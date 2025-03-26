@@ -9,7 +9,7 @@ yabai -m config top_padding 50
 yabai -m config bottom_padding 10
 yabai -m config left_padding 10
 yabai -m config right_padding 10
-yabai -m config window_gap 12
+yabai -m config window_gap 7
 
 # -- mouse settings --
 
@@ -41,7 +41,8 @@ yabai -m rule --add app="Minecraft Launcher" manage=off
 yabai -m rule --add app="Ragnarok M: Classic" manage=off
 yabai -m rule --add app="VNC Viewer" manage=off
 yabai -m rule --add app="IINA" manage=off
-
+yabai -m rule --add app="Anki" manage=off
+yabai -m rule --add app="qemu-system-aarch64" manage=off
 
 # Borders
 borders active_color=0xffebdbb2 width=3.0 hidpi=off &

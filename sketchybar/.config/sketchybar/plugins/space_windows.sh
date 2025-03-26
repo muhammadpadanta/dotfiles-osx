@@ -57,6 +57,8 @@ get_icon_for_app() {
     "Insomnia") echo " ";;
     "Ragnarok M: Classic") echo "󰊴 " ;;
     "Ghostty") echo "󰊠 ";;
+    "Firefox Developer Edition") echo "󰈹 ";;
+    "OBS Studio") echo " ";;
 
     *) echo " " ;;  # Default icon
   esac

@@ -161,14 +161,13 @@
       "statusBar.foreground": "accent"
     }
   },
-  "workbench.colorCustomizations": {
-    "terminal.background": "#00000000"
-  },
+  "workbench.colorCustomizations": {},
 
   /** ------------ Custom CSS & Neovim ------------ **/
   "vscode_custom_css.imports": [
     "file:///Users/muhammadpadanta/.vscode/vscode-custom/style.css",
-    "file:///Users/muhammadpadanta/.vscode/vscode-custom/script.js"
+    "file:///Users/muhammadpadanta/.vscode/vscode-custom/script.js",
+    "file:///Users/muhammadpadanta/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
   ],
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
@@ -179,61 +178,15 @@
     "ui.semanticTokens": true
   },
 
-  "vscode_vibrancy.type": "auto",
-
   "workbench.settings.applyToAllProfiles": [],
   "git.openRepositoryInParentFolders": "never",
   "workbench.colorTheme": "Gruvbox Dark Medium",
   "editor.accessibilitySupport": "off",
-  "extensions.trustedPublishers": [
-    "aaron-bond",
-    "adpyke",
-    "akamud",
-    "alexisvt",
-    "anseki",
-    "be5invis",
-    "bradlc",
-    "catppuccin",
-    "chadalen",
-    "chakrounanas",
-    "christian-kohler",
-    "chrmarti",
-    "dart-code",
-    "donjayamanne",
-    "dracula-theme",
-    "eamodio",
-    "ecmel",
-    "enkia",
-    "esbenp",
-    "formulahendry",
-    "golang",
-    "hzgood",
-    "inferrinizzard",
-    "jdinhlife",
-    "jeroen-meijer",
-    "marcelovelasquez",
-    "mhutchie",
-    "miguelsolorio",
-    "mikaelkristiansson87",
-    "monish",
-    "njqdev",
-    "pflannery",
-    "pkief",
-    "postman",
-    "pranaygp",
-    "rvest",
-    "shd101wyy",
-    "sporiley",
-    "steoates",
-    "tomoki1207",
-    "tonybaloney",
-    "usernamehw",
-    "vspacecode",
-    "wix",
-    "yandeu",
-    "zignd"
-  ],
   "python.defaultInterpreterPath": "/Users/muhammadpadanta/.local/share/mise/installs/python/3.11.11/bin/python",
   "workbench.activityBar.location": "hidden",
-  "terminal.integrated.gpuAcceleration": "off"
+  "terminal.integrated.gpuAcceleration": "auto",
+  "animations.Install-Method": "Custom CSS and JS",
+  "animations.CursorAnimation": true,
+  "workbench.reduceMotion": "off",
+  "svelte.enable-ts-plugin": true
 }

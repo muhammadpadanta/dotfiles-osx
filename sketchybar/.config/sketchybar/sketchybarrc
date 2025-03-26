@@ -66,7 +66,7 @@ for item in spaces front_app time calendar wifi volume battery; do
 done
 
 # Enable hotload
-sketchybar --hotload on
+sketchybar --hotload off
 
 # Run all item scripts
 sketchybar --update

@@ -7,11 +7,13 @@
 set -x PATH /opt/homebrew/bin $PATH
 set -x MANPATH /opt/homebrew/share/man $MANPATH
 set -x INFOPATH /opt/homebrew/share/info $INFOPATH
-set -x PATH $HOME/development/flutter/bin $PATH
-set -x JAVA_HOME /Users/muhammadpadanta/.local/share/mise/installs/java/21.0.2
+set -x JAVA_HOME $HOME/.local/share/mise/installs/java/21.0.2
 set -x PATH $JAVA_HOME/bin $PATH
 set -x PATH $HOME/.pub-cache/bin $PATH
-set -x PATH $PATH /Users/muhammadpadanta/Library/Android/sdk/platform-tools
+set -x PATH $PATH $HOME/development/android_sdk/cmdline-tools/latest/bin
+set -x PATH $PATH $HOME/development/android_sdk/platform-tools
+set -x PATH $PATH $HOME/development/android_sdk/emulator
+set -x ANDROID_HOME $HOME/development/android_sdk
 
 
 
