@@ -34,6 +34,8 @@ alias stopssh 'sudo systemctl stop ssh'
 alias gemini 'python ~/project/python/gemini.py'
 alias hapus 'rm -rf'
 alias shapus 'sudo rm -rf'
+alias wuwaon 'displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 scaling:off"'
+alias wuwaoff 'displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 scaling:on"'
 
 #config alias
 alias cfish 'nvim ~/.config/fish/config.fish'
@@ -60,10 +62,6 @@ alias tach 'tmux attach'
 alias gc 'git checkout'
 alias glb 'git branch -a'
 alias gcl 'git clone'
-
-#AVD alias
-alias listavd '$ANDROID_HOME/tools/emulator -list-avds'
-alias startavd '$ANDROID_HOME/tools/emulator -avd Pixel_7_API_35'
 
 # browser alias
 alias chrome 'google-chrome --new-tab 2>/dev/null'

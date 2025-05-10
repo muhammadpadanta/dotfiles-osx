@@ -5,7 +5,6 @@
   "workbench.tree.indent": 16,
   "workbench.startupEditor": "none",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.list.smoothScrolling": true,
   "workbench.editor.enablePreview": false,
@@ -188,5 +187,14 @@
   "animations.Install-Method": "Custom CSS and JS",
   "animations.CursorAnimation": true,
   "workbench.reduceMotion": "off",
-  "svelte.enable-ts-plugin": true
+  "svelte.enable-ts-plugin": true,
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-light",
+  "animations.Active": "Indent",
+  "animations.Command-Palette": "Fade",
+  "animations.CursorAnimationOptions": {
+    "TrailLength": 4
+  },
+  "animations.Scrolling": "Fade",
+  "animations.Tabs": "None",
+  "animations.Enabled": true
 }

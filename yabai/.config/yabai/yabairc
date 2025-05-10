@@ -5,7 +5,13 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 # padding set to 12px
-yabai -m config top_padding 50
+#yabai -m config top_padding 50
+#yabai -m config bottom_padding 10
+#yabai -m config left_padding 10
+#yabai -m config right_padding 10
+#yabai -m config window_gap 7
+
+yabai -m config top_padding 10
 yabai -m config bottom_padding 10
 yabai -m config left_padding 10
 yabai -m config right_padding 10
@@ -43,6 +49,8 @@ yabai -m rule --add app="VNC Viewer" manage=off
 yabai -m rule --add app="IINA" manage=off
 yabai -m rule --add app="Anki" manage=off
 yabai -m rule --add app="qemu-system-aarch64" manage=off
+yabai -m rule --add app="Wuthering Waves" manage=off
+yabai -m rule --add app="iTerm2" manage=off
 
 # Borders
-borders active_color=0xffebdbb2 width=3.0 hidpi=off &
+borders active_color=0xffebdbb2 width=3.0 &
