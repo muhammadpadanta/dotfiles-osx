@@ -5,10 +5,13 @@
   "workbench.tree.indent": 16,
   "workbench.startupEditor": "none",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.productIconTheme": "fluent-icons",
   "workbench.list.smoothScrolling": true,
   "workbench.editor.enablePreview": false,
   "workbench.editor.closeEmptyGroups": false,
+  "workbench.reduceMotion": "off",
+  "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.activityBar.location": "hidden",
 
   /** ------------ Editor Settings ------------ **/
   "editor.hover.delay": 900,
@@ -19,6 +22,7 @@
   "editor.lineNumbers": "on",
   "editor.folding": true,
   "editor.glyphMargin": true,
+  "editor.accessibilitySupport": "off",
   "editor.guides.indentation": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -42,6 +46,11 @@
   "editor.renderWhitespace": "selection",
   "editor.semanticHighlighting.enabled": true,
 
+  /** ------------ Breadcrumbs Configurations ------------ **/
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.symbolPath": "off",
+  "breadcrumbs.filePath": "on",
+
   /** ------------ Explorer Settings ------------ **/
   "explorer.compactFolders": false,
 
@@ -55,9 +64,10 @@
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.minimumContrastRatio": 1,
+  "terminal.integrated.gpuAcceleration": "auto",
 
   /** ------------ Files & Search Configuration ------------ **/
-  "files.autoSave": "off",
+  "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -82,6 +92,7 @@
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
   "gitlens.hovers.enabled": true,
 
   // Error Lens
@@ -146,49 +157,24 @@
     "editor.formatOnSave": true
   },
 
-  /** ------------ Breadcrumbs Configurations ------------ **/
-  "breadcrumbs.enabled": false,
-  "breadcrumbs.symbolPath": "off",
-  "breadcrumbs.filePath": "on",
-
   /** ------------ Theme & UI Configurations ------------ **/
   "window.titleBarStyle": "custom",
   "security.workspace.trust.untrustedFiles": "open",
-  "catppuccin.workbenchMode": "minimal",
-  "catppuccin.customUIColors": {
-    "mocha": {
-      "statusBar.foreground": "accent"
-    }
-  },
   "workbench.colorCustomizations": {},
-
-  /** ------------ Custom CSS & Neovim ------------ **/
   "vscode_custom_css.imports": [
     "file:///Users/muhammadpadanta/.vscode/vscode-custom/style.css",
     "file:///Users/muhammadpadanta/.vscode/vscode-custom/script.js",
     "file:///Users/muhammadpadanta/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
   ],
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
+  "background.enabled": true,
+  "background.fullscreen": {
+    "images": ["file:///Users/muhammadpadanta/Downloads/117918592_p0.jpg"],
+    "opacity": 0.05,
+    "size": "cover",
+    "position": "center",
+    "interval": 0,
+    "random": false
   },
-
-  /** ------------ Additional Settings ------------ **/
-  "gopls": {
-    "ui.semanticTokens": true
-  },
-
-  "workbench.settings.applyToAllProfiles": [],
-  "git.openRepositoryInParentFolders": "never",
-  "workbench.colorTheme": "Gruvbox Dark Medium",
-  "editor.accessibilitySupport": "off",
-  "python.defaultInterpreterPath": "/Users/muhammadpadanta/.local/share/mise/installs/python/3.11.11/bin/python",
-  "workbench.activityBar.location": "hidden",
-  "terminal.integrated.gpuAcceleration": "auto",
-  "animations.Install-Method": "Custom CSS and JS",
-  "animations.CursorAnimation": true,
-  "workbench.reduceMotion": "off",
-  "svelte.enable-ts-plugin": true,
-  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-light",
   "animations.Active": "Indent",
   "animations.Command-Palette": "Fade",
   "animations.CursorAnimationOptions": {
@@ -196,5 +182,26 @@
   },
   "animations.Scrolling": "Fade",
   "animations.Tabs": "None",
-  "animations.Enabled": true
+  "animations.Enabled": true,
+  "animations.Install-Method": "Custom CSS and JS",
+  "animations.CursorAnimation": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+    "*.dart": "${capture}.g.dart",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+
+  /** ------------ Additional Settings ------------ **/
+  "python.defaultInterpreterPath": "/Users/muhammadpadanta/.local/share/mise/installs/python/3.11.11/bin/python"
 }
